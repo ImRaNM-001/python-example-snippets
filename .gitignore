@@ -121,3 +121,18 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+
+# Considered ignoring
+# Always Ignore
+.DS_Store
+*.pkl
+   
+# Usually Ignore
+*.bin
+
+list_requirements.txt
+visits.txt
+
+
+

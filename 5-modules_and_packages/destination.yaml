@@ -1,0 +1,8 @@
+Hello World
+Inserted a new line
+Append operation,
+person:
+  - name: "John"
+    age: 42
+    interest: "programming"
+    is_employed: False
