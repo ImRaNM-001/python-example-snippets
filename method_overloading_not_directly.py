@@ -14,6 +14,7 @@ print(calc.add(5, 3, 2))                # Output: 10
 
 # Ex: 2
 class MathUtils:
+    # @staticmethod       - # either use this decorator here or use "self" as an argument to the function
     def process_numbers(self, *args: tuple[int, ...]) -> int:
         result: int = 0
         for num in args:
@@ -32,4 +33,8 @@ class Person:
       print(f'{key}: {value}')
 
 person = Person()
-person.greet(name = 'John', age = 30) # Output: name: John \n age: 30
+person.greet(name = 'John', age = 30)                           # Output: name: John \n age: 30
+
+
+
+

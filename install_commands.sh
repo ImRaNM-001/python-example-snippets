@@ -33,5 +33,59 @@ python3 -c "import numpy; print(numpy.__version__)"
 
 
 
+""" to get rid of red line after an import in a .py file, which is due to mypy linter, do this:
+    --> mypy --install-types 
+    --> OUTPUT:
+            mypy.ini: [mypy]: python_version: Invalid python version '3.12.7  # Or your Python version' (expected format: 'x.y')
+            mypy.ini: [mypy]: strict: Not a boolean: True        # Enables all strict flags
+            Installing missing stub packages:
+            /Users/imran-m/python-flask-project/.venv/bin/python3.12 -m pip install types-requests
+
+            Install? [yN] Y
+
+            Collecting types-requests
+            Downloading types_requests-2.32.0.20241016-py3-none-any.whl.metadata (1.9 kB)
+            Requirement already satisfied: urllib3>=2 in ./.venv/lib/python3.12/site-packages (from types-requests) (2.3.0)
+            Downloading types_requests-2.32.0.20241016-py3-none-any.whl (15 kB)
+            Installing collected packages: types-requests
+            Successfully installed types-requests-2.32.0.20241016
+
+"""
+
+"""
+Google C0lab shortuts:
+------------
+1> Remove vertical line in a code cell,
+Open cell Settings on right side of cell >> "Editor" tab >> Replace existing value with '0'
+
+
+2> convert "code" cell to a "text" cell and vice versa,
+CTRL + MM --> converts to a "text" cell
+CTRL + MY --> converts back to a "code" cell
+
+
+3> check if a package is already installed,
+!pip list | grep pandas 
+
+or, for a set of packages,
+!pip list | grep -E 'mlflow|optuna'
+
+
+
+
+
+
+"""
+
+
+
+
+
+
+
+
+
+
+
 
 
