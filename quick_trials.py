@@ -37,6 +37,7 @@ print(upper_case.upper())
 lower_case: str = 'Roadmap to become MLOps engineer in 3 months'
 print(lower_case.lower()) 
 
-
+from pathlib import Path
+print(Path(__file__).parent)
 
 
